@@ -2,7 +2,6 @@
 slug: Rust-Iterator
 title: Rust-迭代器
 date: 2024-01-31
-authors: carlos
 tags: [Rust]
 keywords: [Rust]
 description: Rust迭代器的基本介绍
