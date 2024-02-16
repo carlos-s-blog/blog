@@ -4,12 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="562dc616-43cf-471a-ba52-1382e92403b4" name="Changes" comment="">
+    <list default="true" id="562dc616-43cf-471a-ba52-1382e92403b4" name="Changes" comment="fix blog">
+      <change afterPath="$PROJECT_DIR$/blog/rust/Rust-迭代器.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/authors.yml" beforeDir="false" afterPath="$PROJECT_DIR$/blog/authors.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/lifestyle/MacBook 体验有感.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/lifestyle/一位未曾涉足算法的初学者收获.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/lifestyle/为什么我不用七牛云.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/lifestyle/为何我选择日夜颠倒敲代码.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/lifestyle/关于 restful api 路径定义的思考.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/lifestyle/正被消磨殆尽的耐心.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/lifestyle/浅谈个人学习方式.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/lifestyle/深谈个人对新技术的看法.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/lifestyle/记 Github 学生认证.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/lifestyle/记一次Github提交PR过程.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/lifestyle/记一次前端面试过程.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/lifestyle/谈易语言.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/lifestyle/距离我上篇笔记还是在.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/reference/2020 · 编程之旅-起点.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/reference/2021 · 休学一年.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/reference/2022 · 逆向到Web开发.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/reference/2023 · 谈谈职业规划.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/reference/叙一名转专业+休学的大学生经历.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/features.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/features.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/resources.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/resources.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/skills.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docusaurus.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/friends/_components/FriendCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/friends/_components/FriendCard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/logo.webp" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/logo.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_components/Hero/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_components/Hero/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_components/Hero/styles.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_components/Hero/styles.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +61,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/lishaowen/WebstormProjects/blog/static/img",
+    "last_opened_file_path": "/Users/lishaowen/WebstormProjects/blog/blog/rust",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
@@ -55,6 +77,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/rust" />
+      <recent name="$PROJECT_DIR$/src/pages/_components/Hero/img" />
       <recent name="$PROJECT_DIR$/static/img" />
     </key>
   </component>
@@ -86,11 +110,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708060733706</updated>
-      <workItem from="1708060737138" duration="7957000" />
+      <workItem from="1708060737138" duration="22735000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix blog" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix blog" />
   </component>
 </project>

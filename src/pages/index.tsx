@@ -18,7 +18,7 @@ export default function Home(): JSX.Element {
         <Hero />
         <div className="container-wrapper">
           <BlogSection />
-          <HomepageProject />
+          {/*<HomepageProject />*/}
           <FeaturesSection />
         </div>
       </main>

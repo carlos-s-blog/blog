@@ -9,7 +9,7 @@ const beian1 = '京公网安备2020046258号'
 
 const config: Config = {
   title: 'Carlos’s Blog',
-  url: 'https://kuizuo.cn',
+  url: 'https://project.carloslee.work/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'Carlos',
@@ -32,7 +32,7 @@ const config: Config = {
       },
       {
         name: 'keywords',
-        content: 'Rust爱好者, Web开发者, Flutter, 现在主攻ts全栈',
+        content: 'Java开发者, Rust爱好者, Web开发者, Flutter, 现在主攻ts全栈',
       },
     ],
     docs: {
@@ -65,7 +65,7 @@ const config: Config = {
             { label: '归档', to: 'blog/archive' },
             { label: '笔记', to: 'docs/skill' },
             { label: '资源', to: 'resources' },
-            { label: '友链', to: 'friends' },
+            // { label: '友链', to: 'friends' },
             { label: '工具推荐', to: 'docs/tools' },
           ],
         },
@@ -101,7 +101,7 @@ const config: Config = {
         {
           title: '更多',
           items: [
-            { label: '友链', position: 'right', to: 'friends' },
+            // { label: '友链', position: 'right', to: 'friends' },
             { label: '导航', position: 'right', to: 'resources' },
             {
               html: `

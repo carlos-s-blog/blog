@@ -13,6 +13,18 @@ const FEATURES: FeatureItem[] = [
   {
     title: translate({
       id: 'homepage.feature.developer',
+      message: 'Java开发工程师',
+    }),
+    text: (
+      <Translate>
+        目前工作中用到的主要技术栈。没有看不懂的代码，只有不想看的代码。
+      </Translate>
+    ),
+    Svg: WebDeveloperSvg,
+  },
+  {
+    title: translate({
+      id: 'homepage.feature.spider',
       message: 'TypeScript 全栈工程师',
     }),
     text: (
@@ -21,28 +33,16 @@ const FEATURES: FeatureItem[] = [
         的原则，为项目提供类型安全的保障，提高代码质量和开发效率。
       </Translate>
     ),
-    Svg: WebDeveloperSvg,
-  },
-  {
-    title: translate({
-      id: 'homepage.feature.spider',
-      message: '会点逆向 & 爬虫',
-    }),
-    text: (
-      <Translate>
-        作为一名曾学习与实践逆向工程两年半的开发者，对于逆向工程有着浓厚的兴趣，同时造就了超凡的阅读代码能力。没有看不懂的代码，只有不想看的代码。
-      </Translate>
-    ),
     Svg: SpiderSvg,
   },
   {
     title: translate({
       id: 'homepage.feature.enthusiast',
-      message: '开源爱好者',
+      message: '技术爱好者',
     }),
     text: (
       <Translate>
-        作为一名开源爱好者，积极参与开源社区，为开源项目贡献代码，希望有生之年能够构建出一个知名的开源项目。
+        正在努力学习新的技术，新的框架，积极参与开源社区。
       </Translate>
     ),
     Svg: OpenSourceSvg,

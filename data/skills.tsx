@@ -2,15 +2,6 @@ import { IconProps } from '@iconify/react'
 
 const SKILLS: IconProps[] = [
   {
-    icon: 'logos:vue',
-    style: { left: '1%', top: '1%' },
-  },
-  {
-    icon: 'logos:nuxt-icon',
-    style: { left: '4%', top: '5%' },
-  },
-
-  {
     icon: 'logos:react',
     style: { right: '2%', top: '11%' },
   },
@@ -18,7 +9,6 @@ const SKILLS: IconProps[] = [
     icon: 'logos:nextjs-icon',
     style: { right: '8%', top: '14%' },
   },
-
   {
     icon: 'logos:javascript',
     style: { top: '5%', left: '54%' },
@@ -27,7 +17,6 @@ const SKILLS: IconProps[] = [
     icon: 'logos:typescript-icon',
     style: { top: '9%', left: '60%' },
   },
-
   {
     icon: 'logos:nodejs-icon-alt',
     style: { top: '14%', left: '30%' },
@@ -44,19 +33,29 @@ const SKILLS: IconProps[] = [
     icon: 'logos:postgresql',
     style: { top: '26%', left: '60%' },
   },
-
   {
     icon: 'logos:tailwindcss-icon',
     style: { top: '30%', left: '90%' },
   },
-
   {
-    icon: 'logos:visual-studio-code',
-    style: { bottom: '25%', right: '5%' },
+    icon: 'logos:redis',
+    style: { top: '17%', left: '1%' },
   },
   {
-    icon: 'logos:docusaurus',
-    style: { bottom: '1%', left: '1%' },
+    icon: 'logos:rust',
+    style: { top: '10%', left: '10%' },
+  },
+  {
+    icon: 'logos:java',
+    style: { top: '9%', left: '20%' },
+  },
+  {
+    icon: 'logos:mysql',
+    style: { top: '9%', right: '20%' },
+  },
+  {
+    icon: 'logos:flutter',
+    style: { top: '18%', right: '17%' },
   },
 ]
 
