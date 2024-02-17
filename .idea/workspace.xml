@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="562dc616-43cf-471a-ba52-1382e92403b4" name="Changes" comment="fix blog">
-      <change beforePath="$PROJECT_DIR$/data/social.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/social.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/skill/docusaurus/guides.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/skill/docusaurus/guides.mdx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docusaurus.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/i18n/en/docusaurus-plugin-content-pages/about.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/i18n/en/docusaurus-plugin-content-pages/about.mdx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/about.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.mdx" afterDir="false" />
@@ -106,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708060733706</updated>
       <workItem from="1708060737138" duration="23794000" />
-      <workItem from="1708155356976" duration="14558000" />
+      <workItem from="1708155356976" duration="15027000" />
     </task>
     <servers />
   </component>
