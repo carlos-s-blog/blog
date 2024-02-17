@@ -5,13 +5,12 @@ tags: [React,Vite,Tailwind,Antd]
 authors: carlos
 keywords: [React,Vite,Tailwind,Antd]
 description: 使用vite搭建react18+tailwind+antd开发环境
-slug: Building a React18+Tailwind+Antd development environment using Vite
 ---
 
 <!-- truncate -->
 ## 创建应用
 
-```
+```javascript
 pnpm create vite
 reactplus # 这里随便取一个应用名称，另外可能出现卡主的现象，但是你按下键盘上任意一个字符就会出现"Project name"，输入你要创建的项目文件夹名称即可，然后按下回车键
 # 这一步选择React，按下回车键
@@ -29,7 +28,7 @@ pnpm dev # 启动应用，启动后会提示访问地址，点击打开地址链
 只要把`package.json`中的`"type": "module"`,删除即可
 
 ### TypeScript
-```
+```javascript
 // tsconfig.json
 {
   "compilerOptions": {
@@ -68,12 +67,12 @@ pnpm dev # 启动应用，启动后会提示访问地址，点击打开地址链
 
 ### Prettier
 
-```
+```javascript
 pnpm add prettier -D
 ```
 
 新增`.pretterrc.cjs`以添加prettier配置
-```
+```javascript
 // .prettierrc.js
 /** @format */
 module.exports = {
@@ -105,7 +104,7 @@ module.exports = {
 
 新增`.prettierignore`到根目录来配置需要让prettier忽略的文件
 
-```
+```javascript
 /dist
 /node_modules
 **/*.svg
@@ -137,7 +136,7 @@ yarn-error.log
 使用`airbnb`的编码风格来编写代码，为了支持`eslint+prettier`来统一代码风格，需要安装以下依赖
 其中`eslint-plugin-prettier`与`eslint-config-prettier`用于整合prettier，以防止规则冲突.
 
-```
+```javascript
 pnpm add jest \
       eslint \
       eslint-config-airbnb \
@@ -155,7 +154,7 @@ pnpm add jest \
 ```
 新增`tsconfig.eslint.json`文件用于设置在eslint在格式化代码时需要额外包含的文件.
 
-```
+```javascript
 {
   "extends": "./tsconfig.json",
   "include": [
@@ -176,8 +175,7 @@ pnpm add jest \
 ● extends中把airbnb的airbnb-base和airbnb-typescript/base的base给去掉了，因为base是不支持react的不完整版
 ● 增加了airbnb/hooks，以支持react
 ● 同时在ruls中添加了一些常用的react与jsx-a11y的规则配置
-
-```
+```javascript
 module.exports = {
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -355,7 +353,7 @@ module.exports = {
 };
 ```
 新增`.eslintignore`到根目录来配置需要让eslint忽略的文件
-```
+```javascript
 dist
 node_modules
 pnpm-lock.yaml
@@ -387,7 +385,7 @@ yarn-error.log
 
 sylelint用于定制和统一css代码的风格,安装以下依赖.
 
-```
+```javascript
 pnpm add stylelint \
       stylelint-config-css-modules \
       stylelint-config-recess-order \
@@ -396,7 +394,7 @@ pnpm add stylelint \
 ```
 
 新增stylint.config.js以配置stylelint
-```
+```javascript
 module.exports = {
     // customSyntax: 'postcss-less',
     extends: [
@@ -486,7 +484,7 @@ module.exports = {
 ### Vite
 为了后续方便地编写其它vite配置，我们先建立一个专门用于vite构建配置的目录:`build`，然后在里面写vite配置.配置一下`tsconfig.node.json`，在`include`中添加`build`，以便ts能解析到build目录中的文件.
 
-```
+```javascript
 {
   "compilerOptions": {
     "composite": true,
@@ -499,16 +497,16 @@ module.exports = {
 ```
 添加一下`deepmerge`这个库用于深度合并对象
 
-```
+```javascript
 pnpm add deepmerge
 ```
 编写一个用于获取某个目录的绝对路径的函数
-```
+```javascript
 // build/utils.ts
 export const pathResolve = (dir: string) => resolve(__dirname, '../', dir);
 ```
 编写一个vite自定义配置生成函数的类型，isBuild为是否处于构建环境中（即生产环境）
-```
+```javascript
 // build/types.ts
 export type Configure = (params: ConfigEnv, isBuild: boolean) => UserConfig;
 ```
@@ -522,7 +520,7 @@ export type Configure = (params: ConfigEnv, isBuild: boolean) => UserConfig;
 ● 使用camelCaseOnly(即驼峰命名法：如containerMain)来定义CSS MODULES的类名
 ● 加载默认的react插件
 
-```
+```javascript
 // build/index.ts
 export const createConfig = (params: ConfigEnv, configure?: Configure): UserConfig => {
     const isBuild = params.command === 'build';
@@ -549,7 +547,7 @@ export const createConfig = (params: ConfigEnv, configure?: Configure): UserConf
 ```
 
 编写一个插件创建函数，用于放置所有的vite插件
-```
+```javascript
 // build/plugins.ts
 export function createPlugins(isBuild: boolean) {
     const vitePlugins: (PluginOption | PluginOption[])[] = [react()];
@@ -558,7 +556,7 @@ export function createPlugins(isBuild: boolean) {
 ```
 
 最后在`vite.config.ts`中构建配置
-```
+```javascript
 // vite.config.ts
 import { createConfig } from './build';
 
@@ -571,7 +569,7 @@ export default defineConfig((params: ConfigEnv): UserConfig => {
 最后在`tsconfig.json`添加上别名，根路径以及编译路径
 的配置
 
-```
+```javascript
 // tsconfig.json
 {
     "compilerOptions": {
@@ -593,12 +591,12 @@ export default defineConfig((params: ConfigEnv): UserConfig => {
 
 安装依赖
 
-```
+```javascript
 pnpm add tailwindcss postcss autoprefixer postcss-import postcss-mixins postcss-nested postcss-nesting -D
 ```
 
 生成配置
-```
+```javascript
 pnpx tailwindcss init -p
 ```
 可以看到生成了两个配置文件，分别为`postcss.config.js`与`tailwind.config.js`
@@ -608,7 +606,7 @@ pnpx tailwindcss init -p
 ● tailwindcss/nesting: 可以编写scss规范的嵌套css
 ● autoprefixer: 自动为css样式添加浏览器适配前缀
 ● postcss-mixins: 编写css样板代码，使一段css代码供多个地方使用.
-```
+```javascript
 // postcss.config.js
 module.exports = {
     plugins: {
@@ -622,12 +620,18 @@ module.exports = {
 };
 ```
 
-接下来修改一下tailwind.config.js
-● 为所有tailwind的类添加tw-标识
-● 手动切换暗黑模式
-● 在index.html以及通过glob匹配的./src/**/*.{js,ts,jsx,tsx}这些文件中,tailwind才会生效
-● 并通过theme.screens自定义一下响应式屏幕界点(为了通用性，我们与bootstrap一致)
-```
+接下来修改一下`tailwind.config.js`
+
+1.为所有`tailwind`的类添加tw-标识
+
+2.手动切换暗黑模式
+
+3.在`index.html`以及通过`glob`匹配的`./src/**/*.{js,ts,jsx,tsx}`这些文件中,`tailwind`才会生效
+
+4.并通过theme.screens自定义一下响应式屏幕界点(为了通用性，我们与bootstrap一致)
+
+
+```javascript
 // tailwind.config.js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -658,7 +662,7 @@ module.exports = {
 ● 如果要引用tailwind自带的值或tailwind.config.js的theme中配置的值,可以通过 @apply指令或theme函数获取
 ● 在@layer中添加的样式如果在程序中没有用到会在编译后被清除,如果需要强制存在于编译后的样式表,请在@layer外定义
 它们的内容如下
-```
+```javascript
 /* src/styles/tailwind/base.css */
 @layer base {
 }
@@ -671,7 +675,7 @@ module.exports = {
 ```
 
 新建一个`app.css`文件用于放置全局样式，并在这个文件里测试一下tailwind的引用.
-```
+```javascript
 /* src/styles/app.css */
 html,
 body,
@@ -683,7 +687,7 @@ body,
 然后创建一个入口样式文件index.css来引用这些样式文件
 **注意引用顺序**
 
-```
+```javascript
 @import url('tailwindcss/base.css');
 @import url('./tailwind/base.css');
 @import url('tailwindcss/components.css');
@@ -693,7 +697,7 @@ body,
 @import url('./app.css');
 ```
 直接删除掉src目录下的`index.css`以及`App.css`，然后在`main.tsx`中导入`@/styles/index.css`
-```
+```javascript
 // src/main.tsx
 import '@/styles/index.css';
 
@@ -707,7 +711,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 ```
 
 然后更改一下App.tsx的代码
-```
+```javascript
 // src/App.tsx
 const App = () => {
     return (
@@ -725,18 +729,18 @@ export default App;
 安装依赖
 因为antd的时间组件依赖于dayjs，所以需要安装dayjs
 
-```
+```javascript
 pnpm add antd @ant-design/cssinjs dayjs
 ```
 
 引入Antd的样式
-```
+```javascript
 // src/main.tsx
 import 'antd/dist/reset.css';
 ...
 ```
 为了防止tailwind与antd产生样式冲突，需要修改一下tailwind的配置
-```
+```javascript
 // tailwind.config.js
 ...
     corePlugins: {
@@ -746,7 +750,7 @@ import 'antd/dist/reset.css';
 };
 ```
 包装应用的时候需要使用`StyleProvider`取消Antd的降权（同样是为了防止tailwind与antd产生样式冲突），并且在`ConfigProvider`中把背景取消，然后换个紧凑皮肤`theme.defaultAlgorithm`，代码变成这样
-```
+```javascript
 // src/App.tsx
 import { Button, ConfigProvider, theme } from 'antd';
 import { StyleProvider } from '@ant-design/cssinjs';
