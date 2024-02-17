@@ -5,33 +5,77 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="562dc616-43cf-471a-ba52-1382e92403b4" name="Changes" comment="fix blog">
-      <change afterPath="$PROJECT_DIR$/blog/rust/Rust-迭代器.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/java/CompletableFuture常用方法.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/java/Java多线程环境下的同步机制Synchronized.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/program/Centos8安装RabbitMQ.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/program/Mac-OS删除打开方式中无用的程序列表.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/program/curl的常用方法.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/program/使用vite搭建react18-tailwind-antd开发环境.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/program/分布式事务解决方案.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/program/如何利用缓存提升性能.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/redis/Redis之布隆过滤器.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/redis/Redis哨兵模式总结.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/redis/Redis集群模式总结.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/rust/Tonic实现桌面端.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/rust/无栈协程-Rust学习笔记.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/authors.yml" beforeDir="false" afterPath="$PROJECT_DIR$/blog/authors.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/lifestyle/MacBook 体验有感.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/lifestyle/一位未曾涉足算法的初学者收获.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/lifestyle/为什么我不用七牛云.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/lifestyle/为何我选择日夜颠倒敲代码.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/lifestyle/关于 restful api 路径定义的思考.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/lifestyle/正被消磨殆尽的耐心.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/lifestyle/浅谈个人学习方式.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/lifestyle/深谈个人对新技术的看法.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/lifestyle/记 Github 学生认证.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/lifestyle/记一次Github提交PR过程.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/lifestyle/记一次前端面试过程.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/lifestyle/谈易语言.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/lifestyle/距离我上篇笔记还是在.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/reference/2020 · 编程之旅-起点.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/reference/2021 · 休学一年.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/reference/2022 · 逆向到Web开发.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/reference/2023 · 谈谈职业规划.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/reference/叙一名转专业+休学的大学生经历.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/features.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/features.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/resources.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/resources.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/skills.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docusaurus.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_components/Hero/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_components/Hero/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_components/Hero/styles.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_components/Hero/styles.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/AutoHotkey键盘映射.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/HTTP请求之Content-Type.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/develop/HTTP请求之Content-Type.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/HTTP请求配置客户端SSL证书.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/develop/HTTP请求配置客户端SSL证书.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/JS代码之混淆.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/JS代码之还原.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/JS函数hook.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/develop/JS函数hook.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/JavaScript中的二进制数据.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/MongoDB按时间分组.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/develop/MongoDB按时间分组.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/RPC远程调用浏览器函数.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/Redis获取六位不重复数字（邀请码）.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/Rust实现MD5加密并打包成WebAssembly调用.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/develop/Rust实现MD5加密并打包成WebAssembly调用.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/SSE 服务器发送事件.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/develop/SSE 服务器发送事件.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/SpringBoot热更新.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/develop/SpringBoot热更新.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/Vite使用WebWorker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/nest.js 添加 swagger 响应数据文档.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/develop/nest.js 添加 swagger 响应数据文档.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/node与浏览器中的cookie.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/develop/node与浏览器中的cookie.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/pnpm monorepo实践.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/develop/pnpm monorepo实践.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/rollup.js初体验.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/代码备份方案.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/使用Github Action自动化部署.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/develop/使用Github Action自动化部署.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/使用JSONPath解析json数据.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/develop/使用JSONPath解析json数据.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/前端测试.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/基于Axios封装HTTP类库.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/开源许可证.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/有了 Prisma 就别用 TypeORM 了.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/develop/有了 Prisma 就别用 TypeORM 了.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/服务器与域名备案.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/模拟请求 协议复现方案.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/develop/模拟请求 协议复现方案.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/浅谈HTTP.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/develop/浅谈HTTP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/develop/记一次git丢失代码找回.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/Chrome插件开发.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/Deno不只是个Javascript运行时.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/Gitea 与 Drone 实践.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/GraphQL实践.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/program/GraphQL实践.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/Nest grpc 实践之调用 python ddddocr 库.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/program/Nest grpc 实践之调用 python ddddocr 库.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/Next.js项目搭建与部署.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/program/Next.js项目搭建与部署.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/SpringBoot项目结构.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/Strapi 实现用户注册与登录.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/Typescript 全栈最值得学习的技术栈 TRPC.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/program/Typescript 全栈最值得学习的技术栈 TRPC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/Vercel部署Serverless.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/Vercel部署个人博客.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/vite+vue3搭建uniapp开发环境.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/使用 Fresh 框架构建 Web 应用.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/使用Vue开发Chrome插件.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/将 Supabase 作为下一个后端服务.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/搭建Electron+Vue3开发环境.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/搭建GitLab代码管理仓库.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/第一个博客搭建之Vuepress.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/第二个博客搭建之Docusaurus.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/program/记ThinkPHP项目部署.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/project/API-Service接口服务.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/project/Protocol 协议复现模板.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/project/nest-vben-admin后台管理系统.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/project/写一个VSCode扩展.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/project/某习通小助手.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/project/题小侠.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/rust/Rust-迭代器.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog/rust/Rust-迭代器.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/projects.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,34 +99,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/lishaowen/WebstormProjects/blog/blog/rust",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "/Users/lishaowen/WebstormProjects/blog/node_modules/stylelint",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "pnpm",
-    "prettier.import.notification.dismissed": "true",
-    "prettierjs.PrettierConfiguration.Package": "/Users/lishaowen/WebstormProjects/blog/node_modules/prettier",
-    "ts.external.directory.path": "/Users/lishaowen/WebstormProjects/blog/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lishaowen/WebstormProjects/blog/blog/rust&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;/Users/lishaowen/WebstormProjects/blog/node_modules/stylelint&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;prettier.import.notification.dismissed&quot;: &quot;true&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/lishaowen/WebstormProjects/blog/node_modules/prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/lishaowen/WebstormProjects/blog/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/blog/rust" />
       <recent name="$PROJECT_DIR$/src/pages/_components/Hero/img" />
       <recent name="$PROJECT_DIR$/static/img" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/program" />
+      <recent name="$PROJECT_DIR$/blog/redis" />
+      <recent name="$PROJECT_DIR$/blog" />
+      <recent name="$PROJECT_DIR$/blog/java" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.start">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -105,8 +155,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +171,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708060733706</updated>
-      <workItem from="1708060737138" duration="23236000" />
+      <workItem from="1708060737138" duration="23794000" />
+      <workItem from="1708155356976" duration="7003000" />
     </task>
     <servers />
   </component>

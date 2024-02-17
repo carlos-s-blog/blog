@@ -2,7 +2,7 @@
 slug: use-github-action-to-auto-deploy
 title: 使用Github Action自动化部署
 date: 2022-05-11
-authors: kuizuo
+authors: carlos
 tags: [github, git]
 keywords: [github, git]
 ---
@@ -88,17 +88,7 @@ token 只会在生成的时候显示一次，如需要再次显示，则可以�
 
 然后在**Settings -> Secrets -> Actions 中 New repository secret**中便可添加 secret。
 
-![image-20220511122017247](https://img.kuizuo.cn/image-20220511122017247.png)
-
 这时候只要一调用 git push，就会触发对应的 workflows 文件配置。点击 Actions 便可看到 jobs 工作。
-
-![image-20220511122420135](https://img.kuizuo.cn/image-20220511122420135.png)
-
-此时访问https://kuizuo.github.io/vite-project就可呈现vite项目（不过我已经把仓库给关闭了），但进入会白屏，控制台提示
-
-![image-20220511122914534](https://img.kuizuo.cn/image-20220511122914534.png)
-
-很显然，需要静态资源请求的路径错了，正确的应该是https://kuizuo.github.io/vite-project/assets/index.2435d274.js，根据Vite中的[构建生产版本](https://www.vitejs.net/guide/build.html#public-base-path) 通过命令行参数 `--base=/vite-project/`
 
 稍加操作在 Install and Build 加上 base 参数
 
