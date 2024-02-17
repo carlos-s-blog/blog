@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="562dc616-43cf-471a-ba52-1382e92403b4" name="Changes" comment="fix blog">
-      <change beforePath="$PROJECT_DIR$/docs/skill/docusaurus/search.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/skill/docusaurus/search.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docusaurus.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.ts" afterDir="false" />
-    </list>
+    <list default="true" id="562dc616-43cf-471a-ba52-1382e92403b4" name="Changes" comment="fix blog" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708060733706</updated>
       <workItem from="1708060737138" duration="23794000" />
-      <workItem from="1708155356976" duration="21082000" />
+      <workItem from="1708155356976" duration="21465000" />
     </task>
     <servers />
   </component>
