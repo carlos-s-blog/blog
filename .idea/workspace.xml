@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="562dc616-43cf-471a-ba52-1382e92403b4" name="Changes" comment="fix blog">
-      <change beforePath="$PROJECT_DIR$/data/projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/custom.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708060733706</updated>
       <workItem from="1708060737138" duration="23794000" />
-      <workItem from="1708155356976" duration="22096000" />
+      <workItem from="1708155356976" duration="22507000" />
     </task>
     <servers />
   </component>
