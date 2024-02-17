@@ -1,85 +1,36 @@
 export const projects: Project[] = [
+  // personal https://github.com/CarlosLees/monoapp
   {
-    title: '愧怍的小站',
+    title: 'carlos的个人网站',
     description: '🦖 基于 Docusaurus 静态网站生成器实现个人博客',
     preview: '/img/project/blog.png',
-    website: 'https://kuizuo.cn',
-    source: 'https://github.com/kuizuo/blog',
+    website: 'project.carloslee.work',
+    source: 'https://github.com/carlos-s-blog/blog',
     tags: ['opensource', 'design', 'favorite'],
-    type: 'web',
-  },
-  {
-    title: 'JS代码反混淆',
-    description: '基于 Babel 对 JavaScript 混淆代码还原的工具',
-    preview: '/img/project/js-deobfuscator.png',
-    website: 'https://js-deobfuscator.vercel.app',
-    source: 'https://github.com/kuizuo/js-deobfuscator',
-    tags: ['opensource', 'favorite'],
-    type: 'web',
-  },
-  {
-    title: 'nest-vben-admin',
-    description: ' NestJs + Vben Admin 编写的一款前后端分离的权限管理系统',
-    preview: '/img/project/nest-vben-admin.png',
-    website: 'https://admin.kuizuo.cn',
-    source: 'https://github.com/kuizuo/nest-vben-admin',
-    tags: ['opensource', 'favorite', 'product', 'large'],
-    type: 'web',
-  },
-  {
-    title: 'api-server',
-    description: '🔗 基于 Nuxt 搭建的 API 接口服务网站',
-    preview: '/img/project/kz-api.png',
-    website: 'https://api.kuizuo.cn',
-    source: 'https://github.com/kuizuo/api-service',
-    tags: ['opensource', 'favorite', 'product'],
-    type: 'web',
-  },
-  // toy
-  {
-    title: 'Chaoxing-sign',
-    description: '🌟 超星学习通在线签到，摆脱客户端繁琐的签到流程，让签到不再是你的烦恼。',
-    preview: '/img/project/chaoxing-sign.png',
-    website: 'https://cx.kuizuo.cn',
-    source: 'https://github.com/kuizuo/chaoxing-sign',
-    tags: ['opensource', 'favorite'],
-    type: 'toy',
-  },
-  {
-    title: 'Hoppx',
-    description: '👽 仿 Hoppscotch 风格的网站模板',
-    preview: '/img/project/hoppx.png',
-    website: 'https://hoppx.vercel.app',
-    source: 'https://github.com/kuizuo/hoppx',
-    tags: ['opensource'],
-    type: 'toy',
-  },
-  {
-    title: 'Link Maker',
-    description: '🍋 一个用于将链接转换为卡片样式的预览网站',
-    preview: '/img/project/link-maker.png',
-    website: 'https://link-maker.deno.dev',
-    source: 'https://github.com/kuizuo/link-maker',
-    tags: ['opensource'],
-    type: 'toy',
-  },
-  {
-    title: 'Nuxt-Naive-Admin',
-    description: '🎁 一站式管理系统，融合 Nuxt、Naive UI 和 Supabase',
-    preview: '/img/project/nuxt-naive-admin.png',
-    website: 'https://nuxt-naive-admin.vercel.app',
-    source: 'https://github.com/kuizuo/nuxt-naive-admin',
-    tags: ['opensource'],
-    type: 'toy',
-  },
-  {
-    title: 'vscode-extension',
-    description: 'vscode 插件的样品',
-    preview: '/img/project/vscode-extension.png',
-    website: 'https://marketplace.visualstudio.com/items?itemName=kuizuo.vscode-extension-sample',
-    source: 'https://github.com/kuizuo/vscode-extension',
-    tags: ['opensource'],
     type: 'personal',
+  },
+  {
+    title: 'Ts全栈开发脚手架',
+    description: '基于Nestjs后端、React18中后台、Nextjs SSR创建的开发脚手架',
+    preview: '/img/project/monoapp.png',
+    website: 'https://github.com/CarlosLees/monoapp',
+    source: 'https://github.com/CarlosLees/monoapp',
+    tags: ['opensource', 'design', 'large'],
+    type: 'personal',
+  },
+  {
+    title: '某侦探解密app',
+    description: '基于SpringCloud,Mysql,K8s开发的大型游戏,社交app',
+    preview: '/img/project/master.jpg',
+    tags: ['design', 'large', 'product'],
+    type: 'commerce',
+  },
+  {
+    title: '某养老项目',
+    description: '基于Nestjs,Mysql,SqlServer等开发的养老项目',
+    preview: '/img/project/elderly.jpg',
+    tags: ['design', 'large', 'product'],
+    type: 'commerce',
   },
   {
     title: '前端示例代码库',
@@ -90,27 +41,7 @@ export const projects: Project[] = [
     tags: ['opensource', 'design'],
     type: 'personal',
   },
-  {
-    title: '@kuizuo/http',
-    description: '基于 Axios 封装的 HTTP 类库',
-    website: 'https://www.npmjs.com/package/@kuizuo/http',
-    tags: ['opensource', 'personal'],
-    type: 'other',
-  },
-  {
-    title: 'browser-rpc',
-    description: 'WebSocket 远程调用浏览器函数',
-    website: 'https://github.com/kuizuo/rpc-browser',
-    tags: ['opensource'],
-    type: 'other',
-  },
-  {
-    title: 'ocr-server',
-    description: '使用 nestjs 通过 grpc 与 python ddddocr 库搭建的验证码图像识别服务',
-    website: 'https://github.com/kuizuo/ocr-server',
-    tags: ['opensource'],
-    type: 'other',
-  },
+  // other
   {
     title: 'rust-wasm-md5',
     description: '🦀 Rust + WebAssembly 实现的 MD5 加密',
@@ -137,16 +68,6 @@ export const projectTypeMap = {
   personal: '个人',
   toy: '玩具',
   other: '其他',
-}
-
-export type Project = {
-  title: string
-  description: string
-  preview?: string
-  website: string
-  source?: string | null
-  tags: TagType[]
-  type: ProjectType
 }
 
 export const Tags: Record<TagType, Tag> = {
@@ -180,6 +101,16 @@ export const Tags: Record<TagType, Tag> = {
     description: '个人项目',
     color: '#12affa',
   },
+}
+
+export type Project = {
+  title: string
+  description: string
+  preview?: string
+  website?: string
+  source?: string | null
+  tags: TagType[]
+  type: ProjectType
 }
 
 export const TagList = Object.keys(Tags) as TagType[]
