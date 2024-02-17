@@ -23,12 +23,14 @@ export const projects: Project[] = [
     description: '基于SpringCloud,Mysql,K8s开发的大型游戏,社交app',
     preview: '/img/project/master.jpg',
     tags: ['design', 'large', 'product'],
+    website: '',
     type: 'commerce',
   },
   {
     title: '某养老项目',
     description: '基于Nestjs,Mysql,SqlServer等开发的养老项目',
     preview: '/img/project/elderly.jpg',
+    website: '',
     tags: ['design', 'large', 'product'],
     type: 'commerce',
   },
@@ -107,7 +109,7 @@ export type Project = {
   title: string
   description: string
   preview?: string
-  website?: string
+  website: string
   source?: string | null
   tags: TagType[]
   type: ProjectType
