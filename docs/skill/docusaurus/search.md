@@ -17,7 +17,7 @@ authors: carlos
 
 ### 方案1
 
-关于申请 Algolia DocSearch 在文档中有详细介绍，主要是要申请麻烦，需要等待邮箱，并且还需要回复内容给对方进行确认。所以免费托管的 DocSearch 条件是，比较苛刻的，但申请完几乎是一劳永逸，也是我非常推荐的。如果申请成功后就可以在 [Crawler Admin Console](https://crawler.algolia.com/admin/crawlers) 中查看
+申请 [Algolia DocSearch](https://docsearch.algolia.com/apply/)，主要是要申请麻烦，需要等待邮箱，并且还需要回复内容给对方进行确认。所以免费托管的 DocSearch 条件是，比较苛刻的，但申请完几乎是一劳永逸，也是我非常推荐的。如果申请成功后就可以在 [Crawler Admin Console](https://crawler.algolia.com/admin/crawlers) 中查看
 
 ![image-20220627232545640](https://img.kuizuo.cn/image-20220627232545640.png)
 

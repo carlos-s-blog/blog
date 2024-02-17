@@ -123,8 +123,8 @@ const config: Config = {
         `,
     },
     algolia: {
-      appId: 'GV6YN1ODMO',
-      apiKey: '50303937b0e4630bec4a20a14e3b7872',
+      appId: 'MUQ1LR97NZ',
+      apiKey: 'e112ac3c6b522f6ce6c66cd4c6dad199',
       indexName: 'kuizuo',
     },
     prism: {

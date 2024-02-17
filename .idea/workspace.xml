@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="562dc616-43cf-471a-ba52-1382e92403b4" name="Changes" comment="fix blog">
-      <change beforePath="$PROJECT_DIR$/data/projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/skill/docusaurus/search.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/skill/docusaurus/search.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docusaurus.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/docusaurus.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,7 @@
       <recent name="$PROJECT_DIR$/blog/java" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.start">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -103,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708060733706</updated>
       <workItem from="1708060737138" duration="23794000" />
-      <workItem from="1708155356976" duration="19195000" />
+      <workItem from="1708155356976" duration="21082000" />
     </task>
     <servers />
   </component>
