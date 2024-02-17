@@ -3,7 +3,7 @@ id: vue-reactive-data-object
 slug: /vue-reactive-data-object
 title: Vue响应式数据之Object
 date: 2022-05-10
-authors: kuizuo
+authors: carlos
 tags: [vue, javascript]
 keywords: [vue, javascript]
 ---
@@ -157,7 +157,7 @@ DELETE bar
 
 其中这里的 get,set,deleteProperty 可以拦截到对象属性的取值，赋值与删除的操作。相比 Object.defineproperty 除了好用外，可操作空间也大。
 
-### [this 问题](https://es6.ruanyifeng.com/#docs/proxy#this-问题)
+### this 问题
 
 如果 target 对象存在 this，那么不做任何拦截的情况下，target 的 this 所指向的是 target，而不是代理对象 proxy
 
@@ -175,7 +175,7 @@ target.m() // false
 proxy.m() // true
 ```
 
-具体可看：[this 问题](https://es6.ruanyifeng.com/#docs/proxy#this-问题)
+具体可看：this 问题
 
 ### 区别增加和修改
 
@@ -300,7 +300,4 @@ console.log(target)
 > [Proxy - ECMAScript 6 入门 (ruanyifeng.com)](https://es6.ruanyifeng.com/#docs/proxy)
 >
 > [Proxy() 构造器 - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy)
->
-> 《Vue.js 设计与实现》
->
-> 《深入浅出 Vue.js》
+

@@ -1,11 +1,11 @@
 ---
+slug: Summary of Redis Cluster Mode
 title: Redis集群模式总结
 date: 2022-01-29
 tags: [Redis]
 authors: carlos
 keywords: [Redis]
 description: Redis集群模式总结
-slug: Summary of Redis Cluster Mode
 ---
 
 集群是一组相互独立的、通过高速网络互联的计算机，它们构成了一个组，并以单一系统的模式加以管理。
@@ -15,7 +15,7 @@ slug: Summary of Redis Cluster Mode
 Sentinel哨兵,是为系统提供高可用特性,每一个Redis节点数据是同步的,且每一个Redis节点保存的都是全量数据。
 Cluster集群,是将超大数据集打散到多台Redis服务器,可对存储规模进行水平扩容,每一个Redis节点存储的都是完整数据的子集。
 总而言之，哨兵模式更多的是为了维护可用性，不会因Redis宕机而引起服务的不可用，而集群模式是为了维护更多数据的高存储性，便于储存大批量的数据。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/35e3806bfaca450dbc2b01d16b0539cc.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5YaN6KeBIOeQhuaDsw==,size_20,color_FFFFFF,t_70,g_se,x_16)
+
 # Redis的哈希槽设计
 Redis集群预分好16384个槽，当需要在 Redis 集群中放置一个 key-value 时，根据CRC16(key) mod 16384的值，决定将一个key放到哪个桶中。
 

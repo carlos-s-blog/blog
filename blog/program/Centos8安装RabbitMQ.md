@@ -19,9 +19,7 @@ rabbitmq-server-3.8.4-1.el8.noarch.rpm**
 
 # 安装
 在Linux新建文件夹**rabbitmq**
-![在这里插入图片描述](https://img-blog.csdnimg.cn/1a2a609d51864056822484778a388bf9.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5YaN6KeBIOeQhuaDsw==,size_14,color_FFFFFF,t_70,g_se,x_16)
 使用FileZilla将下载好的三个文件传输到**rabbitmq**文件夹中
-![在这里插入图片描述](https://img-blog.csdnimg.cn/4a0df953bf3443a296d774a917348cb3.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5YaN6KeBIOeQhuaDsw==,size_20,color_FFFFFF,t_70,g_se,x_16)
 进入安装安装包所在文件目录，进行安装。
 
 ```
@@ -58,10 +56,6 @@ rabbitmq-server-3.8.4-1.el8.noarch.rpm**
 ## 访问控制台
 
 点击浏览器，访问http://ip:15672，输入设置的用户名和密码，首次访问可能有点慢。
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/56ec655a1f9041788784d212b0e6d49f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5YaN6KeBIOeQhuaDsw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ff9e21cbc9ff4be4bfaedac592f12f58.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5YaN6KeBIOeQhuaDsw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
 
 ## 用户相关命令
 

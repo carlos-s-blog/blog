@@ -12,8 +12,8 @@
     "message": "Hello! 我是",
     "description": "hero greet"
   },
-  "愧怍": {
-    "message": "愧怍",
+  "Carlos": {
+    "message": "Carlos",
     "description": "my name"
   },
   "homepage.hero.text": {
@@ -39,10 +39,6 @@
   "hompage.hero.idea": {
     "message": "想法感悟",
     "description": "Idea label"
-  },
-  "homepage.qqgroup": {
-    "message": "QQ 群：5478458",
-    "description": "qq group"
   },
   "自我介绍": {
     "message": "自我介绍",

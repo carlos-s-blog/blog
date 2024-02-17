@@ -1,4 +1,5 @@
 ---
+slug: Building a React18+Tailwind+Antd development environment using Vite
 title: 使用vite搭建react18+tailwind+antd开发环境
 date: 2023-04-06
 tags: [React,Vite,Tailwind,Antd]

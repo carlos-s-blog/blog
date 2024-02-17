@@ -1,11 +1,11 @@
 ---
+slug: Tonic implements desktop end
 title: Tonic实现桌面端
 date: 2023-04-06
 tags: [tauri,rust]
 authors: carlos
 keywords: [tauri,rust]
 description: Tonic实现桌面端
-slug: Tonic implements desktop end
 ---
 
 <!-- truncate -->

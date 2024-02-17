@@ -1,11 +1,11 @@
 ---
+slug: Redis Bloom Filter
 title: Redis之布隆过滤器
 date: 2021-12-25
 tags: [Redis]
 authors: carlos
 keywords: [Redis]
 description: Redis之布隆过滤器
-slug: Redis Bloom Filter
 ---
 
 说一个很常见的场景吧，我们在新闻网站、视频网站浏览新闻视频的时候，它们是怎么给我们推荐那些我们没看过的内容的呢？

@@ -36,8 +36,6 @@ public static void add(){
 	count++;
 }
 ```
-最后的执行结果如下图：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/956392938a7840068ae203fd87db59b7.png)![在这里插入图片描述](https://img-blog.csdnimg.cn/c2658c03f1fd4737b7bec122f98d9444.png)
 很明显，Java中的`++`操作，并不是线程安全的。
 这就涉及到了多线程环境下，如何才能保证在操作同一个变量或者方法时保证线程安全。
 
@@ -72,9 +70,7 @@ Synchronized关键字，就是利用一个特定的对象设置一个锁(lock)�
 		count++;
 	}
 ```
-只是做个一个很小的改动，就是在add()方法中加入**synchronized**关键字，看一下执行结果：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c111e46807a447f380b7bf0d7634ef42.png)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/cce11cdb5a8446f4ac4ba837e1c48ebd.png)
+只是做个一个很小的改动，就是在add()方法中加入**synchronized**关键字
 多次执行得到的结果都是**10000**，是符合我们预期的，add()方法也变成了一个线程安全的方法。
 
 ## Synchronized的使用场景

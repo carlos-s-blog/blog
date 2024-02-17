@@ -1,11 +1,11 @@
 ---
+slug: Redis Sentry Mode Summary
 title: Redis哨兵模式总结
 date: 2022-01-25
 tags: [Redis]
 authors: carlos
 keywords: [Redis]
 description: Redis哨兵模式总结
-slug: Redis Sentry Mode Summary
 ---
 
 虽然Redis单机部署起来比较简单，但是但是可靠性低，且不能很好利用CPU多核处理能力，而且在生产环境中，为了保证高可用的状态，单机运行一般是不可行的，同时为了保证数据的读写分离，降低Redis节点的压力，先来看一看Redis的主从复制。
@@ -15,8 +15,6 @@ slug: Redis Sentry Mode Summary
 # 主从复制的用途
 1. 读写分离，扩展主节点的读能力，分担主节点读压力
 2. 容灾恢复，一旦主节点宕机，手动将从节点提升为主节点顶上
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/5fc39c2046614918bb4fda8ecfc7c7ac.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5YaN6KeBIOeQhuaDsw==,size_20,color_FFFFFF,t_70,g_se,x_16)
 
 # 主从复制的搭建
 
@@ -95,7 +93,7 @@ cd /usr/local/redis-stable
 ```
 Slave2的配置与Slave1的配置基本相同，也是连接到主节点的ip地址就可以。
 由于配置了从节点只读，所以在往从节点写入数据的时候，redis会报错。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/061a677041764c9d8b230830eec63598.png)
+
 
 # 哨兵模式(Sentinel模式)
 在搭建完Redis的主从复制模式之后，但是当主服务器宕机后，需要手动把一台从服务器切换为主服务器，人工干预费事费力，还会造成一段时间内服务不可用。
@@ -124,7 +122,7 @@ Sentinel 会不断地检查你的主服务器和从服务器是否运作正常
 ## Sentinel集群
 一个哨兵进程对Redis服务器进行监控，可能会出现问题。
 一般是使用多个哨兵进行监控，各个哨兵之间还会进行监控，形成多哨兵模式。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/37295cca977c4c079226ab0e9f7f1062.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5YaN6KeBIOeQhuaDsw==,size_20,color_FFFFFF,t_70,g_se,x_16)
+
 ## Sentinel集群的搭建
 sentinel实际上就是一个redis，只是配置文件和端口稍有不同，所以只需要修改一下配置，然后按照主从复制的配置方式配置即可。
 
