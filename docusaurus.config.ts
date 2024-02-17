@@ -19,6 +19,7 @@ const config: Config = {
     description:
       '个人博客，主要分享编程开发知识和项目，该网站基于 React 驱动的静态网站生成器 Docusaurus 构建。',
   },
+  onBrokenLinks: "ignore",
   themeConfig: {
     metadata: [
       {
