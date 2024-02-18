@@ -203,18 +203,18 @@ const config: Config = {
     'docusaurus-plugin-sass',
     '@docusaurus/plugin-ideal-image',
     ['docusaurus-plugin-baidu-tongji', { token: 'c48478465718127d9ad7af9dedd36a53' }],
-    [
-      '@docusaurus/plugin-pwa',
-      {
-        debug: process.env.NODE_ENV === 'development',
-        offlineModeActivationStrategies: ['appInstalled', 'standalone', 'queryString'],
-        pwaHead: [
-          { tagName: 'link', rel: 'icon', href: '/img/logo.png' },
-          { tagName: 'link', rel: 'manifest', href: '/manifest.json' },
-          { tagName: 'meta', name: 'theme-color', content: '#12affa' },
-        ],
-      },
-    ],
+    // [
+    //   '@docusaurus/plugin-pwa',
+    //   {
+    //     debug: process.env.NODE_ENV === 'development',
+    //     offlineModeActivationStrategies: ['appInstalled', 'standalone', 'queryString'],
+    //     pwaHead: [
+    //       { tagName: 'link', rel: 'icon', href: '/img/logo.png' },
+    //       { tagName: 'link', rel: 'manifest', href: '/manifest.json' },
+    //       { tagName: 'meta', name: 'theme-color', content: '#12affa' },
+    //     ],
+    //   },
+    // ],
     [
       './src/plugin/plugin-content-blog', // 为了实现全局 blog 数据，必须改写 plugin-content-blog 插件
       {
