@@ -163,20 +163,6 @@ const sidebars: SidebarsConfig = {
       ],
     },
     {
-      label: '算法',
-      type: 'category',
-      link: {
-        type: 'doc',
-        id: 'skill/algorithm/algorithm-introduction',
-      },
-      items: [
-        'skill/algorithm/two-sum',
-        'skill/algorithm/three-sum',
-        'skill/algorithm/sliding-window',
-        'skill/algorithm/double-pointer',
-      ],
-    },
-    {
       label: '逆向',
       type: 'category',
       link: {

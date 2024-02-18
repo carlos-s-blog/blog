@@ -1,5 +1,5 @@
 export const projects: Project[] = [
-  // personal https://github.com/CarlosLees/monoapp
+  // personal
   {
     title: 'carlos的个人网站',
     description: '🦖 基于 Docusaurus 静态网站生成器实现个人博客',
@@ -19,6 +19,16 @@ export const projects: Project[] = [
     type: 'personal',
   },
   {
+    title: '前端示例代码库',
+    description: '📦 整理前端样式和功能的实现代码，可以用来寻找灵感或直接使用示例中的代码',
+    preview: '/img/project/example-website.png',
+    website: 'https://example.kuizuo.cn',
+    source: 'https://github.com/kuizuo/example',
+    tags: ['opensource', 'design'],
+    type: 'personal',
+  },
+  // commerce
+  {
     title: '某侦探解密app',
     description: '基于SpringCloud,Mysql,K8s开发的大型游戏,社交app',
     preview: '/img/project/master.jpg',
@@ -35,13 +45,12 @@ export const projects: Project[] = [
     type: 'commerce',
   },
   {
-    title: '前端示例代码库',
-    description: '📦 整理前端样式和功能的实现代码，可以用来寻找灵感或直接使用示例中的代码',
-    preview: '/img/project/example-website.png',
-    website: 'https://example.kuizuo.cn',
-    source: 'https://github.com/kuizuo/example',
-    tags: ['opensource', 'design'],
-    type: 'personal',
+    title: '某地铁项目管理系统',
+    description: '基于SpringCloud,Mysql,Redis等开发的地铁管理项目',
+    preview: '/img/project/metro.jpg',
+    website: '',
+    tags: ['design', 'large', 'product'],
+    type: 'commerce',
   },
   // other
   {
