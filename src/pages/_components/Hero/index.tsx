@@ -95,7 +95,7 @@ function Name() {
       >
         <Translate id="homepage.hero.name">零榆</Translate>
       </span>
-      <span className={styles.wave}>🦀</span>
+      {/*<span className={styles.wave}>🦀</span>*/}
     </motion.div>
   )
 }
@@ -105,11 +105,11 @@ export default function Hero() {
     <motion.div className={styles.hero}>
       <div className={styles.intro}>
         <Name />
-        <motion.p custom={2} initial="hidden" animate="visible" variants={variants}>
-          <Translate id="homepage.hero.text">
-            {`在这里我会分享各类技术栈所遇到问题与解决方案，带你了解最新的技术栈以及实际开发中如何应用，并希望我的开发经历对你有所启发。`}
-          </Translate>
-        </motion.p>
+        {/*<motion.p custom={2} initial="hidden" animate="visible" variants={variants}>*/}
+        {/*  <Translate id="homepage.hero.text">*/}
+        {/*    {`在这里我会分享各类技术栈所遇到问题与解决方案，带你了解最新的技术栈以及实际开发中如何应用，并希望我的开发经历对你有所启发。`}*/}
+        {/*  </Translate>*/}
+        {/*</motion.p>*/}
         <motion.div custom={3} initial="hidden" animate="visible" variants={variants}>
           <SocialLinks />
         </motion.div>
@@ -131,7 +131,7 @@ export default function Hero() {
       </div>
       <motion.div className={styles.background}>
         <Skills />
-        <HeroMain />
+        {/*<HeroMain />*/}
         <Circle />
       </motion.div>
     </motion.div>

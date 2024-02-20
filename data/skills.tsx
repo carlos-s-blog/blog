@@ -3,7 +3,7 @@ import { IconProps } from '@iconify/react'
 const SKILLS: IconProps[] = [
   {
     icon: 'logos:react',
-    style: { right: '2%', top: '11%' },
+    style: { right: '52%', top: '51%' },
   },
   {
     icon: 'logos:nextjs-icon',
@@ -11,15 +11,15 @@ const SKILLS: IconProps[] = [
   },
   {
     icon: 'logos:javascript',
-    style: { top: '5%', left: '54%' },
+    style: { top: '45%', left: '54%' },
   },
   {
     icon: 'logos:typescript-icon',
-    style: { top: '9%', left: '60%' },
+    style: { top: '79%', left: '60%' },
   },
   {
     icon: 'logos:nodejs-icon-alt',
-    style: { top: '14%', left: '30%' },
+    style: { top: '44%', left: '30%' },
   },
   {
     icon: 'logos:nestjs',
@@ -39,19 +39,19 @@ const SKILLS: IconProps[] = [
   },
   {
     icon: 'logos:redis',
-    style: { top: '17%', left: '1%' },
+    style: { top: '27%', left: '1%' },
   },
   {
     icon: 'logos:rust',
-    style: { top: '10%', left: '10%' },
+    style: { top: '30%', left: '10%' },
   },
   {
     icon: 'logos:java',
-    style: { top: '9%', left: '20%' },
+    style: { top: '69%', left: '20%' },
   },
   {
     icon: 'logos:mysql',
-    style: { top: '9%', right: '20%' },
+    style: { top: '39%', right: '20%' },
   },
   {
     icon: 'logos:flutter',

@@ -61,7 +61,7 @@ export const projects: Project[] = [
     tags: ['design', 'large', 'product'],
     type: 'commerce',
   },
-  // other
+  // other https://www.v2ex.com/?r=a1013711853
   {
     title: 'rust-wasm-md5',
     description: '🦀 Rust + WebAssembly 实现的 MD5 加密',

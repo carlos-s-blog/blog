@@ -21,6 +21,9 @@ const config: Config = {
   },
   onBrokenLinks: "ignore",
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark'
+    },
     metadata: [
       {
         name: 'keywords',
