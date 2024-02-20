@@ -65,7 +65,7 @@ export const projects: Project[] = [
   {
     title: 'rust-wasm-md5',
     description: '🦀 Rust + WebAssembly 实现的 MD5 加密',
-    website: 'https://github.com/kuizuo/rust-wasm-md5',
+    website: 'https://github.com/CarlosLees/rust-wasm-md5',
     tags: ['opensource'],
     type: 'other',
   },
