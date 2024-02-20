@@ -8,7 +8,7 @@ const beian = '鲁ICP备2020046258号-2'
 const beian1 = '京公网安备2020046258号'
 
 const config: Config = {
-  title: 'Carlos’s Blog',
+  title: '零榆’s Blog',
   url: 'https://project.carloslee.work/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -24,7 +24,7 @@ const config: Config = {
     metadata: [
       {
         name: 'keywords',
-        content: 'Carlos, Lee',
+        content: '零榆',
       },
       {
         name: 'keywords',
@@ -43,7 +43,7 @@ const config: Config = {
     },
     navbar: {
       logo: {
-        alt: 'Carlos',
+        alt: '零榆',
         src: 'img/logo.webp',
         srcDark: 'img/logo.webp',
       },
@@ -242,7 +242,7 @@ const config: Config = {
       tagName: 'meta',
       attributes: {
         name: 'description',
-        content: 'Carlos的个人博客',
+        content: '零榆的个人博客',
       },
     },
   ],

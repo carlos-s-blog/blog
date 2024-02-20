@@ -19,6 +19,15 @@ export const projects: Project[] = [
     type: 'personal',
   },
   {
+    title: '阿里云oss快速上传',
+    description: '基于Tauri快速实现的上传工具，方便在书写Markdown时快速插入图片',
+    preview: '/img/project/download.webp',
+    website: 'https://github.com/CarlosLees/oss-client.git',
+    source: 'https://github.com/CarlosLees/oss-client.git',
+    tags: ['opensource', 'favorite', 'personal'],
+    type: 'personal',
+  },
+  {
     title: '前端示例代码库',
     description: '📦 整理前端样式和功能的实现代码，可以用来寻找灵感或直接使用示例中的代码',
     preview: '/img/project/example-website.png',
