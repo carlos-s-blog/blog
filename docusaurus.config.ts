@@ -126,9 +126,9 @@ const config: Config = {
         `,
     },
     algolia: {
-      appId: 'MUQ1LR97NZ',
-      apiKey: 'e112ac3c6b522f6ce6c66cd4c6dad199',
-      indexName: 'kuizuo',
+      appId: 'LQD6WI2QAJ',
+      apiKey: '9d595701f4dfb2b6e209d25a7350a266',
+      indexName: 'carlos-blog',
     },
     prism: {
       theme: themes.oneLight,
