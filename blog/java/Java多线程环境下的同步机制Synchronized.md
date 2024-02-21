@@ -1,7 +1,7 @@
 ---
 slug: Synchronized synchronization mechanism in Java multi-threaded environment
 title: Java多线程环境下的同步机制Synchronized
-date: 2022-01-01
+date: 2023-05-01
 tags: [Java]
 authors: carlos
 keywords: [Java,多线程，并发]

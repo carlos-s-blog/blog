@@ -1,7 +1,7 @@
 ---
 slug: Installing RabbitMQ on Centos8
 title: Centos8安装RabbitMQ
-date: 2021-12-26
+date: 2022-12-26
 tags: [RabbitMQ]
 keywords: [RabbitMQ]
 description: Centos8安装RabbitMQ
