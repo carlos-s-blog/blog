@@ -38,6 +38,18 @@ const config: Config = {
         name: 'keywords',
         content: 'Java开发者, Rust爱好者, Web开发者, Flutter, 现在主攻ts全栈',
       },
+      {
+        name: 'keywords',
+        content: 'node外包，java外包'
+      },
+      {
+        name: 'keywords',
+        content: '软件外包'
+      },
+      {
+        name: 'keywords',
+        content: 'node全栈'
+      }
     ],
     docs: {
       sidebar: {
