@@ -1,11 +1,11 @@
 ---
-slug: Stackless Collaboration | Rust Learning Notes
-title: 无栈协程|Rust学习笔记
+slug: Rust Stackless Collaboration
+title: Rust无栈协程
 date: 2022-12-05 22:48:17
 tags: [Rust]
 authors: carlos
 keywords: [Rust]
-description: 无栈协程|Rust学习笔记
+description: Rust无栈协程
 ---
 
 Rust作为一门新兴语言，主打系统编程。提供了多种编写代码的模式。2019年底正式推出了 **async/await**语法，标志着Rust也进入了协程时代。下面让我们来看一看。Rust协程和Go协程究竟有什么不同。
