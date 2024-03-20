@@ -9,7 +9,7 @@ const beian1 = '京公网安备2020046258号'
 
 const config: Config = {
   title: '零榆’s Blog',
-  url: 'https://project.carloslee.work/',
+  url: 'https://lingyus.cn/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'Carlos',
@@ -217,7 +217,7 @@ const config: Config = {
     'docusaurus-plugin-image-zoom',
     'docusaurus-plugin-sass',
     '@docusaurus/plugin-ideal-image',
-    ['docusaurus-plugin-baidu-tongji', { token: 'c48478465718127d9ad7af9dedd36a53' }],
+    ['docusaurus-plugin-baidu-tongji', { token: '8dc3d60fe1ea8383b7e2c494e9f33c85' }],
     // [
     //   '@docusaurus/plugin-pwa',
     //   {
