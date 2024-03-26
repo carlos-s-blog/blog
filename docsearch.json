@@ -1,6 +1,6 @@
 {
   "index_name": "零榆",
-  "start_urls": ["https://project.carloslee.work"],
+  "start_urls": ["https://lingyus.cn"],
   "sitemap_urls": ["https://kuizuo.cn/sitemap.xml"],
   "selectors": {
     "lvl0": {

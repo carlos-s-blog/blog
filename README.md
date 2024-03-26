@@ -4,7 +4,7 @@
 
 <p align="center">
 <br>
-<a href="https://project.carloslee.work">🖥 Online Preview</a>
+<a href="https://lingyus.cn">🖥 Online Preview</a>
 <br><br> 
 <a href="https://vercel.com/new/clone?repository-url=https://github.com/kuizuo/blog/tree/main&project-name=blog&repo-name=blog" rel="nofollow"><img src="https://vercel.com/button"></a>
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/kuizuo/blog" rel="nofollow"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
@@ -65,7 +65,7 @@
 ## 📥 Start
 
 ```bash
-git clone https://github.com/kuizuo/blog.git
+git clone https://github.com/carlos-s-blog/blog.git
 cd blog
 pnpm install
 pnpm start
