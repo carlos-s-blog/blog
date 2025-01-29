@@ -1,7 +1,7 @@
 export const projects: Project[] = [
   // personal
   {
-    title: 'carlos的个人网站',
+    title: '个人网站',
     description: '🦖 基于 Docusaurus 静态网站生成器实现个人博客',
     preview: '/img/project/blog.png',
     website: 'https://lingyus.cn',
@@ -47,7 +47,7 @@ export const projects: Project[] = [
   },
   {
     title: '某养老项目',
-    description: '基于Nestjs,Mysql,SqlServer等开发的养老项目',
+    description: '基于Java,Mysql,SqlServer等开发的养老项目',
     preview: '/img/project/elderly.jpg',
     website: '',
     tags: ['design', 'large', 'product'],

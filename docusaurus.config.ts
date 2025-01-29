@@ -8,7 +8,7 @@ const beian = '鲁ICP备2020046258号-2'
 const beian1 = '京公网安备2020046258号'
 
 const config: Config = {
-  title: '零榆’s Blog',
+  title: 'Clamber’s Blog',
   url: 'https://lingyus.cn/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -27,7 +27,7 @@ const config: Config = {
     metadata: [
       {
         name: 'keywords',
-        content: '零榆',
+        content: 'Clamber',
       },
       {
         name: 'keywords',
@@ -36,7 +36,7 @@ const config: Config = {
       },
       {
         name: 'keywords',
-        content: 'Java开发者, Rust爱好者, Web开发者, Flutter, 现在主攻ts全栈',
+        content: 'Java开发者, Rust爱好者, Web开发者, React',
       },
       {
         name: 'keywords',
@@ -58,7 +58,7 @@ const config: Config = {
     },
     navbar: {
       logo: {
-        alt: '零榆',
+        alt: 'Clamber',
         src: 'img/logo.webp',
         srcDark: 'img/logo.webp',
       },
@@ -257,7 +257,7 @@ const config: Config = {
       tagName: 'meta',
       attributes: {
         name: 'description',
-        content: '零榆的个人博客',
+        content: 'Clamber的个人博客',
       },
     },
   ],
