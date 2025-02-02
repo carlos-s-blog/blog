@@ -9,7 +9,7 @@ const beian1 = '京公网安备2020046258号'
 
 const config: Config = {
   title: 'Clamber’s Blog',
-  url: 'https://lingyus.cn/',
+  url: 'https://blog.lingyus.cn/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'Clamber',
@@ -267,12 +267,7 @@ const config: Config = {
   ],
   i18n: {
     defaultLocale: 'zh-CN',
-    locales: ['en', 'zh-CN'],
-    localeConfigs: {
-      en: {
-        htmlLang: 'en-GB',
-      },
-    },
+    locales: ['zh-CN'],
   },
 }
 
