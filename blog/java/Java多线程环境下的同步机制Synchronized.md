@@ -3,12 +3,10 @@ slug: Synchronized synchronization mechanism in Java multi-threaded environment
 title: Java多线程环境下的同步机制Synchronized
 date: 2023-05-01
 tags: [Java]
-authors: carlos
+authors: Clamber
 keywords: [Java,多线程，并发]
 description: Java多线程环境下的同步机制Synchronized
 ---
-
-大家有没有想过一个问题，Java中的`++`操作是不是线程安全的呢，也就是说在多线程情况下，多个线程一起去执行`++`操作，得到的结果会不会是我们所预期的结果呢，可以写个demo去验证一下。
 
 <!-- truncate -->
 

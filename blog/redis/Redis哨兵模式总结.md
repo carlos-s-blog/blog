@@ -3,7 +3,7 @@ slug: Redis Sentry Mode Summary
 title: Redis哨兵模式总结
 date: 2022-01-25
 tags: [Redis]
-authors: carlos
+authors: Clamber
 keywords: [Redis]
 description: Redis哨兵模式总结
 ---

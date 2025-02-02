@@ -2,7 +2,7 @@
 slug: Rust-Iterator 
 title: Rust-迭代器
 date: 2024-01-31
-authors: carlos
+authors: Clamber
 tags: [Rust]
 keywords: [Rust]
 ---

@@ -2,7 +2,7 @@
 slug: Common methods for CompletableFuture
 title: CompletableFuture常用方法
 date: 2023-05-09
-authors: carlos
+authors: Clamber
 tags: [Java]
 keywords: [Java,多线程,异步]
 description: CompletableFuture常用方法

@@ -3,7 +3,7 @@ slug: Common methods of curl
 title: curl的常用方法
 date: 2022-05-25
 tags: [Linux]
-authors: carlos
+authors: Clamber
 keywords: [curl]
 description: curl的常用方法
 ---

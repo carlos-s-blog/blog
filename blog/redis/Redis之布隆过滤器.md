@@ -3,7 +3,7 @@ slug: Redis Bloom Filter
 title: Redis之布隆过滤器
 date: 2021-12-25
 tags: [Redis]
-authors: carlos
+authors: Clamber
 keywords: [Redis]
 description: Redis之布隆过滤器
 ---

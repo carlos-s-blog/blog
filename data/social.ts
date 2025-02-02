@@ -18,11 +18,11 @@ type SocialValue = {
 }
 
 const social: Social = {
-  github: 'https://github.com/CarlosLees',
+  github: 'https://github.com/Clamber-L',
   // twitter: 'https://twitter.com/kuizuo',
   // juejin: 'https://juejin.cn/user/1565318510545901',
-  qq: 'https://img.carloslee.work/upload/IMG_3677.JPG',
-  wx: 'https://img.carloslee.work/upload/IMG_3678.JPG',
+  qq: 'https://println-g1-carlos.oss-cn-qingdao.aliyuncs.com/upload/IMG_3677.JPG',
+  wx: 'https://println-g1-carlos.oss-cn-qingdao.aliyuncs.com/upload/IMG_3678.JPG',
   // zhihu: 'https://www.zhihu.com/people/kuizuo',
   // cloudmusic: 'https://music.163.com/#/user/home?id=1333010742',
   email: 'mailto:println_g1@163.com',

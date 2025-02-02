@@ -3,7 +3,7 @@ slug: Delete useless program list in Mac OS open mode
 title: Mac OS删除打开方式中无用的程序列表
 date: 2022-06-19
 tags: [Mac OS]
-authors: carlos
+authors: Clamber
 keywords: [Mac OS]
 description: Mac OS删除打开方式中无用的程序列表
 ---

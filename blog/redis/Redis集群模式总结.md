@@ -3,7 +3,7 @@ slug: Summary of Redis Cluster Mode
 title: Redis集群模式总结
 date: 2022-01-29
 tags: [Redis]
-authors: carlos
+authors: Clamber
 keywords: [Redis]
 description: Redis集群模式总结
 ---

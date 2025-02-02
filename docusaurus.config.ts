@@ -12,7 +12,7 @@ const config: Config = {
   url: 'https://lingyus.cn/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'Carlos',
+  organizationName: 'Clamber',
   projectName: 'blog',
   customFields: {
     bio: '道阻且长，行则将至',
@@ -134,7 +134,7 @@ const config: Config = {
         <p style="display: inline-flex; align-items: center;"><img style="height:20px;margin-right: 0.5rem;" src="/img/police.png" alt="police" height="20"/><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=${beian1.match(
           /\d+/,
         )?.[0]}" >${beian1}</a></p>
-        <p>Copyright © 2020 - PRESENT Carlos Built with Docusaurus.</p>
+        <p>Copyright © 2020 - PRESENT Clamber Built with Docusaurus.</p>
         `,
     },
     algolia: {
@@ -247,7 +247,7 @@ const config: Config = {
         feedOptions: {
           type: 'all',
           title: 'Carlos',
-          copyright: `Copyright © ${new Date().getFullYear()} Carlos Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
+          copyright: `Copyright © ${new Date().getFullYear()} Clamber Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
         },
       },
     ],
