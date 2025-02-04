@@ -164,9 +164,9 @@ msetex k1 v1 k4 v4 # 原子性的操作 要么一起成功 要么一起失败
 getset key value # 先取后设置 不存在则返回nil 如果存在,则获取,并赋为新值
 ############################################################################
 # 对象
-set user:1 {name:kuizuo,age:20} # 设置user为一个对象
+set user:1 {name:user,age:20} # 设置user为一个对象
 # or
-set user:1:name kuizuo
+set user:1:name user
 # user:{id}:{filed} value
 
 get user:1
@@ -251,7 +251,7 @@ Map 集合，key-map(key-value)
 **set 命令用 h 开头**
 
 ```bash
-hset myhash field1 kuizuo
+hset myhash field1 user
 
 hget myhash field1
 
@@ -621,7 +621,7 @@ Redis 发布订阅(publsub)是一种消息通信模式 ∶ 发送者(pub)发送�
 订阅端
 
 ```
-SUBSCRIBE kuizuo # 创建频道
+SUBSCRIBE user # 创建频道
 
 
 
@@ -630,7 +630,7 @@ SUBSCRIBE kuizuo # 创建频道
 发送端
 
 ```
-PUBLISH kuizuo ‘hello‘
+PUBLISH user ‘hello‘
 
 
 ```
