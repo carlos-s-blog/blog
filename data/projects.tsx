@@ -36,6 +36,15 @@ export const projects: Project[] = [
     tags: ['opensource', 'design'],
     type: 'personal',
   },
+  {
+    title: '类Zoom视频聊天网站',
+    description: 'NextJs, Clerk,Stream Video, MongoDB开发的视频聊天网站',
+    preview: '/img/project/zoom.png',
+    website: 'https://github.com/carlos-s-blog/zoom-project',
+    source: 'https://github.com/carlos-s-blog/zoom-project',
+    tags: ['opensource', 'design', 'large'],
+    type: 'personal',
+  },
   // commerce
   {
     title: '某侦探解密app',
