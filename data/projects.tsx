@@ -69,6 +69,13 @@ export const projects: Project[] = [
     tags: ['opensource'],
     type: 'other',
   },
+  {
+    title: 'rust-im-server',
+    description: '🦀 Rust 实现的IM后端框架',
+    website: 'https://gitee.com/li-shan-wen/im-project',
+    tags: ['opensource'],
+    type: 'other',
+  },
 ]
 
 export type Tag = {
