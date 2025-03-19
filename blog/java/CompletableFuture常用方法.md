@@ -6,6 +6,7 @@ authors: Clamber
 tags: [Java]
 keywords: [Java,多线程,异步]
 description: CompletableFuture常用方法
+image: https://cdn.pixabay.com/photo/2016/12/09/22/10/programming-1896158_1280.jpg
 ---
 
 <!-- truncate -->

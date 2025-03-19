@@ -6,6 +6,7 @@ tags: [tauri,rust]
 authors: Clamber
 keywords: [tauri,rust]
 description: Tonic实现桌面端
+image: https://www.55kaifa.com/uploads/20250212/c7f3fda990039d2bb083864dbef9a413.png
 ---
 
 <!-- truncate -->
