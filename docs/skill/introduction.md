@@ -9,7 +9,6 @@ keywords:
   - React
   - JavaScript
   - Typescript
-  - 逆向
   - HTTP
 ---
 
@@ -23,5 +22,4 @@ keywords:
 - JavaScript & TypeScript
 - Node
 - 安卓
-- 逆向
 - HTTP

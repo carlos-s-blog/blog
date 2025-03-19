@@ -1,5 +1,5 @@
 {
-  "index_name": "零榆",
+  "index_name": "Clamber",
   "start_urls": ["https://lingyus.cn"],
   "sitemap_urls": ["https://kuizuo.cn/sitemap.xml"],
   "selectors": {
