@@ -6,6 +6,7 @@ tags: [Rust]
 authors: Clamber
 keywords: [Rust]
 description: Rust无栈协程
+image: https://img.lingyus.cn/rust.jpg
 ---
 
 Rust作为一门新兴语言，主打系统编程。提供了多种编写代码的模式。2019年底正式推出了 **async/await**语法，标志着Rust也进入了协程时代。下面让我们来看一看。Rust协程和Go协程究竟有什么不同。

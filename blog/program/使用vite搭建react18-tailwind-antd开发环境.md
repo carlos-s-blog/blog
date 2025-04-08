@@ -6,6 +6,7 @@ tags: [React,Vite,Tailwind,Antd]
 authors: Clamber
 keywords: [React,Vite,Tailwind,Antd]
 description: 使用vite搭建react18+tailwind+antd开发环境
+image: https://raw.githubusercontent.com/llanojs/Readme_template/master/react-logo.jpg
 ---
 
 <!-- truncate -->
