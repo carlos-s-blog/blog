@@ -4,7 +4,7 @@ title: Java与Rust的Grpc通信
 date: 2025-06-30
 tags: [Java, Rust, Grpc]
 authors: Clamber
-keywords: [Java,Rust，Grpc, Tonic, Netty]
+keywords: [Java,Rust,Grpc,Tonic,Netty]
 description: Java与Rust的Grpc通信
 image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFGeEA2G-fEkfQDwGxMKfIFyry0TH8pOzL7g&s
 ---
@@ -12,7 +12,7 @@ image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFGeEA2G-fEkfQDwGxM
 实现一个Java作为服务端，Rust作为客户端的Grpc通信系统。适用于跨语音，框架之间的通信。
 <!-- truncate -->
 
-## 环境准备
+# 环境准备
 ### 1.安装Protoc
 Windows系统可以参考[ApiFox官网文档](https://apifox.com/apiskills/protocol-buffers-protoc-setup/)。
 Macos系统建议使用**Homebrew**安装
@@ -26,8 +26,8 @@ Macos系统建议使用**Homebrew**安装
 类似于下面的结构:
 ![](https://println-g1-carlos.oss-cn-qingdao.aliyuncs.com/blog/project.png)
 
-### 3.编写proto文件，生成Java和Rust的解析解析文件
-1. 编写proto文件
+# 编写proto，生成Java和Rust的解析解析文件
+### 1. 编写proto文件
 ```protobuf
 syntax = "proto3";
 
@@ -60,7 +60,7 @@ service UserService {
 ```
 文件头部指定生成文件名和包名，构建两个Api，一个查询，一个创建。
 
-2. 生成Java代码
+### 2. 生成Java代码
 
 需要借助于Netty进行生成。
 
@@ -89,7 +89,7 @@ service UserService {
         </dependency>
 ```
 * 安装maven插件，用于编译proto文件为Java类
-```javascript
+```java
 <build>
         <extensions>
             <extension>
@@ -151,7 +151,7 @@ service UserService {
     </build>
 ```
 这里的**protobuf-maven-plugin**就是用于生成Java类的插件。
-**configuration**中指定protoc的版本，指定**proto**文件的位置，由于是在项目同级目录下的proto文件夹下，所以指定目录为${project.basedir}/../proto.
+**configuration**中指定protoc的版本，指定**proto**文件的位置，由于是在项目同级目录下的proto文件夹下，所以指定目录为`${project.basedir}/../proto`.
 
 * 使用插件编译proto文件
 插件安装成功后，maven下会显示插件命令:
@@ -162,7 +162,7 @@ service UserService {
 ![](https://println-g1-carlos.oss-cn-qingdao.aliyuncs.com/blog/target.png)
 ![](https://println-g1-carlos.oss-cn-qingdao.aliyuncs.com/blog/java-proto.png)
 
-3. 编写Java服务类，启动项目.
+### 3. 编写Java服务类，启动项目.
 
 * 新建**GrpcUserService**,集成服务类中的Base类。
 
@@ -219,7 +219,7 @@ Starting gRPC server on port 8999...
 ```
 * 项目启动成功
 
-4.创建Rust项目，生成proto解析后的Rust文件
+### 4.创建Rust项目，生成proto解析后的Rust文件
 
 * 新建rust项目，安装所需依赖。
 ```shell
