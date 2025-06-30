@@ -12,6 +12,7 @@ image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFGeEA2G-fEkfQDwGxM
 实现一个Java作为服务端，Rust作为客户端的Grpc通信系统。适用于跨语音，框架之间的通信。
 <!-- truncate -->
 
+![](https://println-g1-carlos.oss-cn-qingdao.aliyuncs.com/blog/process.png)
 # 环境准备
 ### 1.安装Protoc
 Windows系统可以参考[ApiFox官网文档](https://apifox.com/apiskills/protocol-buffers-protoc-setup/)。
@@ -206,7 +207,7 @@ public class GrpcServerRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        Server server = ServerBuilder.forPort(8999).addService(userService).build();
+        Server server = ServerBuilder.forPort(8999).addService(userService).build().start();
         System.out.println("Starting gRPC server on port 8999...");
         server.awaitTermination();
     }
@@ -231,6 +232,7 @@ cargo add prost
 cargo add tonic -F zstd -F default -F router
 cargo add tonic-build --build
 cargo add anyhow --build
+cargo add tokio -F full
 
 touch build.rs
 ```
@@ -262,3 +264,18 @@ fn main() -> Result<()> {
 }
 ```
 读取user.proto文件，将解析生成的struct加上**Deserialize**宏。
+
+### 5.编写Rust客户端逻辑
+
+```rust
+#[tokio::main]
+async fn main() -> Result<()> {
+    let mut client = UserServiceClient::connect("http://192.168.0.20:8999").await?;
+    let response = client
+        .get_user(Request::new(GetUserRequest { id: 123u64 }))
+        .await?;
+
+    println!("RESPONSE={:?}", response.into_inner());
+    Ok(())
+}
+```
