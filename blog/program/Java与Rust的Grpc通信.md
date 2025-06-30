@@ -279,3 +279,108 @@ async fn main() -> Result<()> {
     Ok(())
 }
 ```
+
+* 池化连接，添加认证鉴权
+
+使用bb8进行池化,同时添加鉴权信息
+```rust
+cargo add bb8
+
+use std::future::Future;
+use std::str::FromStr;
+use bb8::ManageConnection;
+use tonic::{Request, Status};
+use tonic::codegen::InterceptedService;
+use tonic::metadata::MetadataValue;
+use tonic::service::Interceptor;
+use tonic::transport::{Channel, Endpoint};
+use crate::pb::user::user_service_client::UserServiceClient;
+
+#[derive(Clone)]
+pub struct AuthInterceptor {
+    token: String,
+}
+
+impl Interceptor for AuthInterceptor {
+    fn call(&mut self, mut request: Request<()>) -> Result<Request<()>, Status> {
+        let meta_token = MetadataValue::from_str(&self.token).unwrap();
+        request.metadata_mut().insert("authorization", meta_token);
+        Ok(request)
+    }
+}
+
+#[derive(Clone)]
+pub struct GrpcManager {
+    pub endpoint: Endpoint,
+    pub token: String,
+}
+
+impl ManageConnection for GrpcManager {
+    type Connection = UserServiceClient<InterceptedService<Channel, AuthInterceptor>>;
+    type Error = tonic::transport::Error;
+
+    fn connect(&self) -> impl Future<Output = Result<<Self as ManageConnection>::Connection, <Self as ManageConnection>::Error>> + Send {
+        let endpoint = self.endpoint.clone();
+        let token = self.token.clone();
+
+        Box::pin(async move {
+            let channel = endpoint.connect().await?;
+            let interceptor = AuthInterceptor { token };
+            Ok(UserServiceClient::with_interceptor(channel, interceptor))
+        })
+    }
+
+    fn is_valid(&self, _conn: &mut Self::Connection) -> impl Future<Output = Result<(), <Self as ManageConnection>::Error>> + Send {
+        Box::pin(async { Ok(()) })
+    }
+
+    fn has_broken(&self, _conn: &mut Self::Connection) -> bool {
+        false
+    }
+}
+```
+metadata中携带**authorization**参数，用于鉴权，可以使用jwt生成token加密信息
+
+* 修改Java服务端代码
+
+```java
+ @Component
+public class GrpcAuthInterceptor implements ServerInterceptor {
+	@Override
+	public <ReqT, RespT> ServerCall.Listener<ReqT> interceptCall(ServerCall<ReqT, RespT> serverCall,
+																 Metadata metadata,
+																 ServerCallHandler<ReqT, RespT> serverCallHandler) {
+		String auth = metadata.get(Metadata.Key.of("authorization", Metadata.ASCII_STRING_MARSHALLER));
+		System.out.println(auth);
+		if (!StringUtils.hasText(auth)) {
+			return new ServerCall.Listener() {}; // return no-op listener
+		}
+
+		return serverCallHandler.startCall(serverCall, metadata);
+	}
+}
+
+启动的时候添加认证
+
+@Component
+public class GrpcServerRunner implements ApplicationRunner {
+
+    private final GrpcUserService userService;
+
+    private final GrpcAuthInterceptor authInterceptor;
+
+    public GrpcServerRunner(GrpcUserService userService, GrpcAuthInterceptor authInterceptor) {
+        this.userService = userService;
+		this.authInterceptor = authInterceptor;
+	}
+
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+        Server server = ServerBuilder.forPort(8999).addService(userService).intercept(authInterceptor).build().start();
+        System.out.println("Starting gRPC server on port 8999...");
+        server.awaitTermination();
+    }
+}
+```
+
+# 添加消息重试机制
