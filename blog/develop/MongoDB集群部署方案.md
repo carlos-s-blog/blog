@@ -108,7 +108,7 @@ security:
   authorization: enabled
 ```
 
-> 157、159 节点仅修改 dbPath 和 port。
+> 157、159 节点分别为config2,config3,修改 dbPath 和 port。
 
 ---
 
